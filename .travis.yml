@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "lts/*"
+before_install:
+  - npm i -g npm@latest
+cache:
+  directories:
+    - "node_modules"
+install:
+    - npm install
+script:
+    - npm run lint
