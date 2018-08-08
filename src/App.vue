@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/"><img class="logo" src="./assets/logo.png"></router-link>
+      <router-link to="/"><img class="logo" alt="Another vue logo attempt" src="./assets/anotherVueLogoAttempt.png"></router-link>
     </div>
     <router-view/>
   </div>
