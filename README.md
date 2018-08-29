@@ -1,4 +1,4 @@
-# Portfolio  [![Build Status](https://travis-ci.org/IvanMiIosevic/Portfolio.svg?branch=master)](https://travis-ci.org/IvanMiIosevic/Portfolio)
+# Portfolio  [![Build Status](https://travis-ci.org/IvanMiIosevic/portfolio.svg?branch=master)](https://travis-ci.org/IvanMiIosevic/portfolio)
 
 Portfolio powered by Vue.js :octocat:
 
