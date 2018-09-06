@@ -1,6 +1,6 @@
 # Portfolio  [![Build Status](https://travis-ci.org/IvanMiIosevic/portfolio.svg?branch=master)](https://travis-ci.org/IvanMiIosevic/portfolio)
 
-Portfolio powered by Vue js :octocat:
+Portfolio powered by Vue js 🦄
 
 ## Table of Contents
 
