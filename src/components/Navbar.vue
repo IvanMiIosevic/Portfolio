@@ -24,14 +24,6 @@
 .navbar {
   background-color: transparent;
 }
-.logo-item,
-.navbar .navbar-brand .logo-item:hover {
-  background-color: #fdfffc;
-  border-radius: 5px;
-  height: 50px;
-  width: 80px;
-  margin-top: 5px;
-}
 </style>
 
 <script>

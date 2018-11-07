@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-medium is-light is-bold">
+  <section class="hero contact is-medium is-bold">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
@@ -9,6 +9,15 @@
     </div>
   </section>
 </template>
+
+<style lang="scss">
+.contact {
+  background-color: #eac4d5;
+  * {
+    color: white;
+  }
+}
+</style>
 
 <script>
 import Vue from "vue";

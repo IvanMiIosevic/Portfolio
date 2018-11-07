@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-medium is-primary is-bold">
+  <section class="hero about is-fullheight is-bold">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
@@ -12,3 +12,9 @@
     </div>
   </section>
 </template>
+
+<style lang="scss">
+.about {
+  background-color: hsl(48, 100%, 67%);
+}
+</style>

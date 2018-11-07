@@ -1,11 +1,11 @@
 <template>
-  <section class="hero is-medium is-warning is-bold">
+  <section class="hero is-medium projects is-bold">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
           Projets:
         </h1>
-        <div v-for="project of projects" :key="project.id">
+        <div v-for="(project, index) of projects" :key="index">
           <h4><a :href="project.link">{{ project.title }}</a></h4>
           <p>{{ project.description }}</p>
         </div>
@@ -14,6 +14,12 @@
   </section>
 </template>
 
+<style lang="scss">
+.projects {
+  background-color: #f5f5f5;
+}
+</style>
+
 <script>
 import Vue from "vue";
 export default Vue.extend({
@@ -21,7 +27,12 @@ export default Vue.extend({
     return {
       projects: [
         {
-          id: 1,
+          title: "filers",
+          link: "https://google.fr",
+          imageUrl: "https://google.fr",
+          description: "Google file clone"
+        },
+        {
           title: "filers",
           link: "https://google.fr",
           imageUrl: "https://google.fr",
