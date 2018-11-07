@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/"><img class="logo" alt="Another vue logo attempt" src="./assets/anotherVueLogoAttempt.png"></router-link>
-    </div>
-    <router-view/>
+    <Navbar />
+    <Home />
   </div>
 </template>
 
@@ -15,17 +13,28 @@ body {
   margin: 0;
 }
 #app {
-  font-family: 'Lato', sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  .logo {
-    height: auto;
-    width: 10vw;
-    margin: auto;
-  }
-}
 </style>
+
+<script>
+import Vue from "vue";
+import "bulma/css/bulma.css";
+import Home from "@/views/Home.vue";
+import Navbar from "@/components/Navbar.vue";
+export default Vue.extend({
+  data() {
+    return {
+      showNav: false
+    };
+  },
+  components: {
+    Home,
+    Navbar
+  }
+});
+</script>
