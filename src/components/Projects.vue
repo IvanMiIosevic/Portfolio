@@ -16,7 +16,7 @@
 
 <style lang="scss">
 .projects {
-  background-color: #f5f5f5;
+  background-color: #ef767a;
 }
 </style>
 

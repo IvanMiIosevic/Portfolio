@@ -1,13 +1,15 @@
 <template>
-  <section class="hero about is-fullheight is-bold">
+  <section class="hero about is-medium is-bold">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Ivan Milosevic
+          A propos:
         </h1>
-        <h2 class="subtitle">
-          Web developer
-        </h2>
+        <p class="subtitle">
+          Développeur full-Stack passionné, curieux et motivé sont les mots qui me représente le mieux. 
+          <br>
+          Après 2 ans d'études dans le développement Web, je suis prêt à rejoindre votre équipe en tant que développeur full-stack afin de mener à bien les différents projets de votre entreprise.
+        </p>
       </div>
     </div>
   </section>
@@ -15,6 +17,6 @@
 
 <style lang="scss">
 .about {
-  background-color: hsl(48, 100%, 67%);
+  background-color: #f4f1bb;
 }
 </style>
