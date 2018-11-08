@@ -16,8 +16,8 @@
 <style lang="scss">
 .hello {
   background-color: #ffda6b;
-}
-.title {
-  font-size: 5vw;
+  .title {
+    font-size: 5vw;
+  }
 }
 </style>
