@@ -28,7 +28,7 @@
   }
 }
 .navbar.is-fixed-top {
-  background-color: #FBF2C0;
+  background-color: #fbf2c0;
 }
 </style>
 
