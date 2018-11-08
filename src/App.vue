@@ -19,6 +19,9 @@ body {
   text-align: center;
   color: #2c3e50;
 }
+.is-marged-right {
+  margin-right: 0.5rem;
+}
 </style>
 
 <script>
