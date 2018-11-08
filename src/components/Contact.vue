@@ -1,5 +1,5 @@
 <template>
-  <section class="hero contact is-medium is-bold">
+  <section id="contact" class="hero contact is-medium is-bold">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">

@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="content has-text-centered">
             <p class="love">Made with <font-awesome-icon icon="heart" /> By Alvai</p>
             <p>2018</p>
