@@ -12,10 +12,7 @@
 
 <style lang="scss">
 .contact {
-  background-color: #eac4d5;
-  * {
-    color: white;
-  }
+  background-color: #faffd8;
 }
 </style>
 
