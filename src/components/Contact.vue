@@ -12,11 +12,11 @@
 
 <style lang="scss">
 .contact {
-  background-color: #faffd8;
+  background-color: #fdfffc;
 }
 </style>
 
-<script>
+<script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
   name: "Contact"

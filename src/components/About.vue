@@ -17,6 +17,6 @@
 
 <style lang="scss">
 .about {
-  background-color: #f4f1bb;
+  background-color: #fdfffc;
 }
 </style>

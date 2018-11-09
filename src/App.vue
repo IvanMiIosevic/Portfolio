@@ -24,7 +24,7 @@ body {
 }
 </style>
 
-<script>
+<script lang="ts">
 import Vue from "vue";
 import "bulma/css/bulma.css";
 import Home from "@/views/Home.vue";

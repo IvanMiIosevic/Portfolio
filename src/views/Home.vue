@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from "vue";
 // @ is an alias to /src
 import About from "@/components/About.vue";

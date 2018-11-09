@@ -31,13 +31,16 @@
 <style lang="scss">
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(5rem, auto));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  @media screen and (min-width: 1087px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
   grid-gap: 5rem;
   max-width: 1500px;
   margin: 0 auto;
 }
 .projects {
-  background-color: #ef767a;
+  background-color: #3C91E6;
   .card {
     border-radius: 25px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -56,7 +59,7 @@
 }
 </style>
 
-<script>
+<script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
   data() {

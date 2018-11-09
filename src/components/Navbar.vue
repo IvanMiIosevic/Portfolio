@@ -28,11 +28,11 @@
   }
 }
 .navbar.is-fixed-top {
-  background-color: #fbf2c0;
+  background-color: #fdfffc;
 }
 </style>
 
-<script>
+<script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
   data() {
