@@ -16,11 +16,6 @@
               <h4 class="has-text-weight-bold is-uppercase">{{ project.title }}</h4>
               <p>{{ project.description }}</p>
             </div>
-          <footer class="card-footer has-text-center">
-            <span v-for="(tag, index) of project.tags" :key="index" class="tag is-marged-right is-light">
-              #{{tag}}
-            </span>
-          </footer>
           </div>
           </div>
         </div>

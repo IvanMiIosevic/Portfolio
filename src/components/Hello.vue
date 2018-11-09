@@ -15,11 +15,12 @@
 
 <style lang="scss">
 .hello {
-  background: linear-gradient(
+    background: linear-gradient(
       rgba(255, 218, 107, 0.60), 
       rgba(255, 218, 107, 0.60)
     )
-    ,url('https://lh6.googleusercontent.com/nAtWv0v2vJwkPc4nSgp2mMiqJZXVtnxmbUDTIGScc_G0djSspepU3qi-jyuIJQ8XpWKXrRgVmeKkUwz63VhC=w1853-h901-rw');
+    ,url('../assets/slashers.png');
+    background-position: center;
   .title {
     font-size: 5vw;
   }
