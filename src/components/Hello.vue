@@ -19,8 +19,10 @@
       rgba(255, 218, 107, 0.60), 
       rgba(255, 218, 107, 0.60)
     )
-    ,url('../assets/slashers.png');
+    ,url('../assets/killers.png');
     background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
   .title {
     font-size: 5vw;
   }
