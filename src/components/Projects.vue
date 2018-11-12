@@ -36,7 +36,7 @@
   margin: 0 auto;
 }
 .projects {
-  background-color: #3C91E6;
+  background-color: #ffda6b;
   .card {
     border-radius: 25px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);

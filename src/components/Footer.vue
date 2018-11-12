@@ -1,8 +1,9 @@
 <template>
     <footer id="footer" class="footer">
         <div class="content has-text-centered">
+            <p>Cover Art by <a href="https://www.deviantart.com/nrjin" norel>NRjin</a></p>
             <p class="love">Made with <font-awesome-icon class="heart-icon" icon="heart" /> By <span class="username">Alvai</span></p>
-            <p>2018</p>
+            <p>2018</p>   
         </div>
     </footer>
 </template>
@@ -12,13 +13,13 @@
   background-color: #31393c;
 }
 p {
-    color: white;
+  color: white;
 }
 .heart-icon {
-    color: #fb3640;
+  color: #fb3640;
 }
 .username {
-    color: #ffda6b;
+  color: #ffda6b;
 }
 </style>
 
