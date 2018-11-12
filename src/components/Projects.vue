@@ -7,6 +7,7 @@
         </h1>
         <div class="projects-container">
           <div v-for="(project, index) of projects" :key="index" class="card">
+            <!-- TODO: switch to components -->
             <div class="card-image">
               <figure class="image is-4by3">
                 <img :src="project.imageUrl" alt="Placeholder image">
