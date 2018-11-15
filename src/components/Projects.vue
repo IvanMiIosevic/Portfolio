@@ -60,71 +60,7 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      projects: [
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        },
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        },
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        },
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        },
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        },
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        },
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        },
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        },
-        {
-          title: "WIP Title",
-          link: "https://alvai.io",
-          imageUrl:
-            "https://www.stickersmalin.com/images/ajoute/prd/196/196290-image2_448x448.png",
-          description: "WIP description"
-        }
-      ]
+      projects: []
     };
   }
 });
