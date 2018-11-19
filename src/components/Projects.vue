@@ -20,6 +20,7 @@
           </div>
           </div>
         </div>
+        <a href="https://drive.google.com/file/d/1q-TAN_9JEFHeDMZHz0mDUqjSBlZEwvA0/view?usp=sharing" class="resume-button margin-top">Mon CV</a>
     </div>
   </section>
 </template>

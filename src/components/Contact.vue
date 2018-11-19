@@ -11,6 +11,7 @@
         <a class="contact-link" href="https://stackoverflow.com/users/9940385/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'stack-overflow']" /></a>
         <a class="contact-link" href="https://www.linkedin.com/in/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'linkedin']" /></a>
       </div>
+      <a href="https://drive.google.com/file/d/1q-TAN_9JEFHeDMZHz0mDUqjSBlZEwvA0/view?usp=sharing" class="resume-button margin-top">Mon CV</a>
     </div>
   </section>
 </template>
