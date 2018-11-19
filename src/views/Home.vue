@@ -16,7 +16,6 @@ import Projects from "@/components/Projects.vue";
 import Contact from "@/components/Contact.vue";
 import Footer from "@/components/Footer.vue";
 import Hello from "@/components/Hello.vue";
-
 export default Vue.extend({
   name: "Home",
   components: {
