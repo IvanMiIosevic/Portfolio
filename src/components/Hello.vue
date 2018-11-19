@@ -23,8 +23,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: 100%;
+    @media screen and (max-width: 700px) {
+      background-size: 150%;
+    }
   .title {
-    font-size: 5vw;
+    font-size: 5vw;    
+    @media screen and (max-width: 700px) {
+      font-size: 10vw;
+    }
   }
+
 }
 </style>
