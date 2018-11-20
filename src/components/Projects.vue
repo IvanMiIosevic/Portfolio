@@ -71,27 +71,25 @@ export default Vue.extend({
           title: "Pokedex",
           description: "Pokédex première génération fait avec JavaScript",
           project_URL: "https://github.com/Alvai/pokedex",
-          image_URL: "https://i.imgur.com/EbPjCvX.png"
+          image_URL: "https://ouch.alvai.io/pokedex.png"
         },
         {
           title: "Stunning octo goggles",
           description: "Express API avec GraphQL && Typescript",
           project_URL: "https://github.com/Alvai/stunning-octo-goggles",
-          image_URL: "https://graphql.org/img/og_image.png"
+          image_URL: "https://ouch.alvai.io/graphql.png"
         },
         {
           title: "Homepilot (stage)",
           description: "Application d'estimations de loyer en Node/React",
           project_URL: "https://estimation-loyer.homepilot.fr",
-          image_URL:
-            "http://www.jaimelesstartups.fr/wp-content/uploads/2017/01/Homepilot-Facebook-logo.png"
+          image_URL: "https://ouch.alvai.io/homepilot_logo.png"
         },
         {
           title: "Snippy Snippets",
           description: "Site de partage de bout de code fait en Vue JS",
           project_URL: "https://github.com/Alvai/snippy-snippets",
-          image_URL:
-            "https://4.bp.blogspot.com/-W9WLUpGFD_8/WWBKMNZlzgI/AAAAAAABY8o/FqQnOR1Dfi4dmoDXwmhcvST4tHS-xkcXACLcBGAs/s1600/Java%2BCode%2BSnippets.jpg"
+          image_URL: "https://ouch.alvai.io/vue_white.jpeg"
         }
       ]
     };
