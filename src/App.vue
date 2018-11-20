@@ -22,25 +22,6 @@ body {
 .is-marged-right {
   margin-right: 0.5rem;
 }
-// Switch resume button to component
-.resume-button {
-  font-weight: bold;
-  font-size: 25px;
-  color: #31393c;
-  border: 2px solid #31393c;
-  border-radius: 10px;
-  padding: 10px;
-  &:hover {
-    color: #ffda6b;
-    background-color: #31393c;
-  }
-  &.margin-top {
-    display: block;
-    width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-  }
-}
 </style>
 
 <script lang="ts">

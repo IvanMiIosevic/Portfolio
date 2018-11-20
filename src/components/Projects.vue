@@ -20,7 +20,7 @@
           </div>
           </div>
         </div>
-        <a href="https://drive.google.com/file/d/1q-TAN_9JEFHeDMZHz0mDUqjSBlZEwvA0/view?usp=sharing" class="resume-button margin-top">Mon CV</a>
+        <Resume />
     </div>
   </section>
 </template>
@@ -62,6 +62,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import Resume from "@/components/Resume.vue";
 export default Vue.extend({
   data() {
     return {
@@ -99,6 +100,9 @@ export default Vue.extend({
     redirect: function(url: string): void {
       window.location.href = url;
     }
+  },
+  components: {
+    Resume
   }
 });
 </script>

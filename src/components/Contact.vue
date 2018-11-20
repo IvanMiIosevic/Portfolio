@@ -11,7 +11,7 @@
         <a class="contact-link" href="https://stackoverflow.com/users/9940385/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'stack-overflow']" /></a>
         <a class="contact-link" href="https://www.linkedin.com/in/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'linkedin']" /></a>
       </div>
-      <a href="https://drive.google.com/file/d/1q-TAN_9JEFHeDMZHz0mDUqjSBlZEwvA0/view?usp=sharing" class="resume-button margin-top">Mon CV</a>
+      <Resume />
     </div>
   </section>
 </template>
@@ -32,6 +32,7 @@ svg.svg-inline--fa.contact-icon {
 
 <script lang="ts">
 import Vue from "vue";
+import Resume from "@/components/Resume.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -47,6 +48,9 @@ library.add(faLinkedin, faGithub, faEnvelope, faTwitter, faStackOverflow);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 export default Vue.extend({
-  name: "Contact"
+  name: "Contact",
+  components: {
+    Resume
+  }
 });
 </script>
