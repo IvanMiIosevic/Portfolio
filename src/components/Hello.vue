@@ -6,6 +6,9 @@
           Ivan Milosevic
         </h1>
         <h2 class="subtitle">
+          aka Alvai
+        </h2>
+        <h2 class="subtitle">
           Full-Stack Web developer
         </h2>
         <Resume />
@@ -16,16 +19,12 @@
 
 <style lang="scss">
 .hello {
-  background: linear-gradient(
-      rgba(255, 218, 107, 0.6),
-      rgba(255, 218, 107, 0.6)
-    ),
-    url("../assets/killers.png");
+  background: url(../assets/killers.png) no-repeat, $primary-color;
+  background-size: 31.25em;
   background-position: center;
-  background-repeat: no-repeat;
   background-position-y: 100%;
-  @media screen and (max-width: 700px) {
-    background-size: 180%;
+  @media screen and (max-width: $desktop) {
+    background-size: 90vw;
   }
   .title {
     font-size: 5vw;
