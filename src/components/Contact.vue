@@ -5,11 +5,11 @@
         <h1 class="title">
           Contact:
         </h1>
-        <a class="contact-link" href="mailto:contact.ivanmilosevic@gmail.com"><font-awesome-icon class="contact-icon" icon="envelope" /></a>
-        <a class="contact-link" href="https://github.com/Alvai"><font-awesome-icon class="contact-icon" :icon="['fab', 'github']" /></a>
-        <a class="contact-link" href="https://twitter.com/Alvai__"><font-awesome-icon class="contact-icon" :icon="['fab', 'twitter']" /></a>
-        <a class="contact-link" href="https://stackoverflow.com/users/9940385/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'stack-overflow']" /></a>
-        <a class="contact-link" href="https://www.linkedin.com/in/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'linkedin']" /></a>
+        <a class="contact-link" href="mailto:contact.ivanmilosevic@gmail.com" alt><font-awesome-icon class="contact-icon" icon="envelope" title="email icon"/></a>
+        <a class="contact-link" href="https://github.com/Alvai"><font-awesome-icon class="contact-icon" :icon="['fab', 'github']" title="github icon"/></a>
+        <a class="contact-link" href="https://twitter.com/Alvai__"><font-awesome-icon class="contact-icon" :icon="['fab', 'twitter']" title="twitter icon"/></a>
+        <a class="contact-link" href="https://stackoverflow.com/users/9940385/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'stack-overflow']" title="stack overflow icon" /></a>
+        <a class="contact-link" href="https://www.linkedin.com/in/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'linkedin']" title="linkedin icon"/></a>
       </div>
       <Resume />
     </div>
