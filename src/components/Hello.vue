@@ -36,7 +36,8 @@
 </style>
 <script lang="ts">
 import Vue from "vue";
-import Resume from "@/components/Resume.vue";
+const Resume = () =>
+  import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
 export default Vue.extend({
   name: "Hello",
   components: {

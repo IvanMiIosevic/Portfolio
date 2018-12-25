@@ -11,11 +11,16 @@
 <script lang="ts">
 import Vue from "vue";
 // @ is an alias to /src
-import About from "@/components/About.vue";
-import Projects from "@/components/Projects.vue";
-import Contact from "@/components/Contact.vue";
-import Footer from "@/components/Footer.vue";
-import Hello from "@/components/Hello.vue";
+const Hello = () =>
+  import(/* webpackChunkName: "home" */ "@/components/Hello.vue");
+const About = () =>
+  import(/* webpackChunkName: "About" */ "@/components/About.vue");
+const Projects = () =>
+  import(/* webpackChunkName: "Projects" */ "@/components/Projects.vue");
+const Contact = () =>
+  import(/* webpackChunkName: "Contact" */ "@/components/Contact.vue");
+const Footer = () =>
+  import(/* webpackChunkName: "Footer" */ "@/components/Footer.vue");
 export default Vue.extend({
   name: "Home",
   components: {

@@ -32,7 +32,8 @@ svg.svg-inline--fa.contact-icon {
 
 <script lang="ts">
 import Vue from "vue";
-import Resume from "@/components/Resume.vue";
+const Resume = () =>
+  import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {

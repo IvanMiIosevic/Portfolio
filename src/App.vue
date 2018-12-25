@@ -27,8 +27,9 @@ body {
 <script lang="ts">
 import Vue from "vue";
 import "bulma/css/bulma.css";
-import Home from "@/views/Home.vue";
-import Navbar from "@/components/Navbar.vue";
+const Home = () => import(/* webpackChunkName: "home" */ "@/views/Home.vue");
+const Navbar = () =>
+  import(/* webpackChunkName: "navbar" */ "@/components/Navbar.vue");
 export default Vue.extend({
   data() {
     return {
