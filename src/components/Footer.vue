@@ -10,7 +10,7 @@
 
 <style lang="scss" scoped>
 .footer {
-  background-color: #31393c;
+  background-color: $secondary-color;
 }
 p {
   color: white;
@@ -19,7 +19,7 @@ p {
   color: #fb3640;
 }
 .username {
-  color: #ffda6b;
+  color: $primary-color;
 }
 </style>
 
