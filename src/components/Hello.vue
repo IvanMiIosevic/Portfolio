@@ -19,7 +19,7 @@
 
 <style lang="scss">
 .hello {
-  background: url(../assets/killers.png) no-repeat, $primary-color;
+  background: url(../assets/killers.webp) no-repeat, $primary-color;
   background-size: 31.25em;
   background-position: center;
   background-position-y: 100%;
