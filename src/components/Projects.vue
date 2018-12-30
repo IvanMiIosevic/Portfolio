@@ -37,7 +37,7 @@
   margin: 0 auto;
 }
 .projects {
-  background-color: #ffda6b;
+  background-color: $primary-color;
   .card {
     border-radius: 25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -62,34 +62,49 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Resume from "@/components/Resume.vue";
+const Resume = () =>
+  import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
 export default Vue.extend({
   data() {
     return {
+      // TO DO: Move projects to an api
       projects: [
         {
           title: "Pokedex",
           description: "Pokédex première génération fait avec JavaScript",
           project_URL: "https://github.com/Alvai/pokedex",
-          image_URL: "https://ouch.alvai.io/pokedex.png"
+          image_URL: "https://ouch.alvai.io/pokedex.webp"
         },
         {
-          title: "Stunning octo goggles",
+          title: "Stunning octo goggles (WIP)",
           description: "Express API avec GraphQL && Typescript",
           project_URL: "https://github.com/Alvai/stunning-octo-goggles",
-          image_URL: "https://ouch.alvai.io/graphql.png"
+          image_URL: "https://ouch.alvai.io/graphql.webp"
         },
         {
           title: "Homepilot (stage)",
           description: "Application d'estimations de loyer en Node/React",
           project_URL: "https://estimation-loyer.homepilot.fr",
-          image_URL: "https://ouch.alvai.io/homepilot_logo.png"
+          image_URL: "https://ouch.alvai.io/homepilot_logo.webp"
         },
         {
-          title: "Snippy Snippets",
+          title: "Snippy Snippets (WIP)",
           description: "Site de partage de bout de code fait en Vue JS",
           project_URL: "https://github.com/Alvai/snippy-snippets",
-          image_URL: "https://ouch.alvai.io/vue_white.jpeg"
+          image_URL: "https://ouch.alvai.io/vue_logo.webp"
+        },
+        {
+          title: "Bethesleak",
+          description:
+            "Site de gestion de ticket pour Bethesleak (Privée jusqu'au rendu)",
+          project_URL: "https://ouch.alvai.io/info/comingSoon",
+          image_URL: "https://ouch.alvai.io/bethesleak.webp"
+        },
+        {
+          title: "too-short",
+          description: "raccourcisseur d'url en Node.js",
+          project_URL: "https://github.com/Alvai/too-short",
+          image_URL: "https://ouch.alvai.io/url-shortener.webp"
         }
       ]
     };

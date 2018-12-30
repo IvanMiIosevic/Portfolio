@@ -2,7 +2,7 @@
     <nav class="navbar is-fixed-top">
       <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item logo-item" href="#"><img class="logo" alt="Alvai's logo" src="../assets/logo.svg" width="112" height="28"></a>
+            <a class="navbar-item logo-item" href="#">Alvai</a>
             <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
             <span></span>
             <span></span>
@@ -22,13 +22,20 @@
 
 <style lang="scss">
 .navbar {
-  background-color: transparent;
   a.navbar-item:hover {
-    background-color: transparent;
+    background-color: inherit;
+    color: inherit;
+    text-decoration: underline;
   }
 }
+a.logo-item {
+  height: 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 .navbar.is-fixed-top {
-  background-color: #fdfffc;
+  background-color: $primary-color;
 }
 </style>
 

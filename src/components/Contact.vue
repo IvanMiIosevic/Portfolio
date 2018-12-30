@@ -5,11 +5,11 @@
         <h1 class="title">
           Contact:
         </h1>
-        <a class="contact-link" href="mailto:contact.ivanmilosevic@gmail.com"><font-awesome-icon class="contact-icon" icon="envelope" /></a>
-        <a class="contact-link" href="https://github.com/Alvai"><font-awesome-icon class="contact-icon" :icon="['fab', 'github']" /></a>
-        <a class="contact-link" href="https://twitter.com/Alvai__"><font-awesome-icon class="contact-icon" :icon="['fab', 'twitter']" /></a>
-        <a class="contact-link" href="https://stackoverflow.com/users/9940385/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'stack-overflow']" /></a>
-        <a class="contact-link" href="https://www.linkedin.com/in/ivan-milosevic"><font-awesome-icon class="contact-icon" :icon="['fab', 'linkedin']" /></a>
+        <a class="contact-link" href="mailto:contact.ivanmilosevic@gmail.com" aria-label="Email Link"><font-awesome-icon class="contact-icon" icon="envelope" title="email icon"/></a>
+        <a class="contact-link" href="https://github.com/Alvai" aria-label="Github link"><font-awesome-icon class="contact-icon" :icon="['fab', 'github']" title="github icon"/></a>
+        <a class="contact-link" href="https://twitter.com/Alvai__" aria-label="twitter link"><font-awesome-icon class="contact-icon" :icon="['fab', 'twitter']" title="twitter icon"/></a>
+        <a class="contact-link" href="https://stackoverflow.com/users/9940385/ivan-milosevic" aria-label="stackoverflow link"><font-awesome-icon class="contact-icon" :icon="['fab', 'stack-overflow']" title="stack overflow icon" /></a>
+        <a class="contact-link" href="https://www.linkedin.com/in/ivan-milosevic" aria-label="linkedin link"><font-awesome-icon class="contact-icon" :icon="['fab', 'linkedin']" title="linkedin icon"/></a>
       </div>
       <Resume />
     </div>
@@ -32,7 +32,8 @@ svg.svg-inline--fa.contact-icon {
 
 <script lang="ts">
 import Vue from "vue";
-import Resume from "@/components/Resume.vue";
+const Resume = () =>
+  import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {

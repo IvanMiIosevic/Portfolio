@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $secondary-color;
 }
 .is-marged-right {
   margin-right: 0.5rem;
@@ -27,8 +27,9 @@ body {
 <script lang="ts">
 import Vue from "vue";
 import "bulma/css/bulma.css";
-import Home from "@/views/Home.vue";
-import Navbar from "@/components/Navbar.vue";
+const Home = () => import(/* webpackChunkName: "home" */ "@/views/Home.vue");
+const Navbar = () =>
+  import(/* webpackChunkName: "navbar" */ "@/components/Navbar.vue");
 export default Vue.extend({
   data() {
     return {
