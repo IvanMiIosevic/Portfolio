@@ -29,7 +29,7 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      link: "https://ouch.alvai.io/cv_IvanMilosevic.pdf"
+      link: "https://ouch.alvai.io/cv"
     };
   },
   name: "Resume"
