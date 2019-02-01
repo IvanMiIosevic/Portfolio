@@ -105,6 +105,12 @@ export default Vue.extend({
           description: "raccourcisseur d'url en Node.js",
           project_URL: "https://github.com/Alvai/too-short",
           image_URL: "https://ouch.alvai.io/url-shortener.webp"
+        },
+        {
+          title: "deezweb",
+          description: "Petit client web pour deezer",
+          project_URL: "https://github.com/Alvai/deezweb",
+          image_URL: "https://ouch.alvai.io/deezweb.webp"
         }
       ]
     };
