@@ -23,9 +23,9 @@
 svg.svg-inline--fa.contact-icon {
   font-size: 50px;
   margin: 5px;
-  color: #ffd779;
+  color: $alvai-yellow;
   :hover {
-    color: #333c3e;
+    color: $alvai-dark;
   }
 }
 </style>

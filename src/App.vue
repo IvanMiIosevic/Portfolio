@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: $secondary-color;
+  color: $alvai-dark;
 }
 .is-marged-right {
   margin-right: 0.5rem;

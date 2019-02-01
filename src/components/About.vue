@@ -17,6 +17,6 @@
 
 <style lang="scss">
 .about {
-  background-color: #fdfffc;
+  background-color: $alvai-snow;
 }
 </style>

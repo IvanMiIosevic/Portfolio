@@ -7,13 +7,13 @@
 .resume-button {
   font-weight: bold;
   font-size: 25px;
-  color: #31393c;
-  border: 2px solid #31393c;
+  color: $alvai-dark;
+  border: 2px solid $alvai-dark;
   border-radius: 10px;
   padding: 10px;
   &:hover {
-    color: #ffda6b;
-    background-color: #31393c;
+    color: $alvai-yellow;
+    background-color: $alvai-dark;
   }
   &.margin-top {
     display: block;

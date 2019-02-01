@@ -37,7 +37,7 @@
   margin: 0 auto;
 }
 .projects {
-  background-color: $primary-color;
+  background-color: $alvai-yellow;
   .card {
     border-radius: 25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);

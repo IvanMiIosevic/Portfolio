@@ -35,7 +35,7 @@ a.logo-item {
   font-size: 1.5rem;
 }
 .navbar.is-fixed-top {
-  background-color: $primary-color;
+  background-color: $alvai-yellow;
 }
 </style>
 

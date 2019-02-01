@@ -10,16 +10,16 @@
 
 <style lang="scss" scoped>
 .footer {
-  background-color: $secondary-color;
+  background-color: $alvai-dark;
 }
 p {
   color: white;
 }
 .heart-icon {
-  color: #fb3640;
+  color: $alvai-rose;
 }
 .username {
-  color: $primary-color;
+  color: $alvai-yellow;
 }
 </style>
 
