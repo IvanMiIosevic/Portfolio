@@ -76,7 +76,7 @@ export default Vue.extend({
           image_URL: "https://ouch.alvai.io/pokedex.webp"
         },
         {
-          title: "Stunning octo goggles (WIP)",
+          title: "Stunning octo goggles",
           description: "Express API avec GraphQL && Typescript",
           project_URL: "https://github.com/Alvai/stunning-octo-goggles",
           image_URL: "https://ouch.alvai.io/graphql.webp"
@@ -86,19 +86,6 @@ export default Vue.extend({
           description: "Application d'estimations de loyer en Node/React",
           project_URL: "https://estimation-loyer.homepilot.fr",
           image_URL: "https://ouch.alvai.io/homepilot_logo.webp"
-        },
-        {
-          title: "Snippy Snippets (WIP)",
-          description: "Site de partage de bout de code fait en Vue JS",
-          project_URL: "https://github.com/Alvai/snippy-snippets",
-          image_URL: "https://ouch.alvai.io/vue_logo.webp"
-        },
-        {
-          title: "Bethesleak",
-          description:
-            "Site de gestion de ticket pour Bethesleak (Privée jusqu'au rendu)",
-          project_URL: "https://ouch.alvai.io/info/comingSoon",
-          image_URL: "https://ouch.alvai.io/bethesleak.webp"
         },
         {
           title: "too-short",
