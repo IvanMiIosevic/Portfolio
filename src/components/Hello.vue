@@ -2,7 +2,7 @@
   <section class="hero hello is-fullheight is-bold">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
+        <h1 class="hello-title">
           Ivan Milosevic
         </h1>
         <h2 class="subtitle">
@@ -36,13 +36,13 @@
     background-size: 90vw;
   }
 }
-  .title {
-    font-size: 5vw;
-    animation: 0.5s ease-out 0s 1 slideInFromLeft;
-    @media screen and (max-width: 700px) {
-      font-size: 10vw;
-    }
-  }
+.hello-title {
+font-size: 5vw;
+animation: 0.5s ease-out 0s 1 slideInFromLeft;
+@media screen and (max-width: 700px) {
+  font-size: 10vw;
+}
+}
 .subtitle {
   font-family: "IBM Plex Mono Italic";
 }
