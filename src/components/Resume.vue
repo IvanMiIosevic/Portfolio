@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" class="resume-button margin-top">Mon CV</a>
+  <a :href="link" target="_blank" rel="noopener noreferrer" class="resume-button margin-top">Mon CV</a>
 </template>
 
 <style lang="scss" scoped>
