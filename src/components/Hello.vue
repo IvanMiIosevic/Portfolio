@@ -18,6 +18,15 @@
 </template>
 
 <style lang="scss">
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-1000%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .hello {
   background: url(../assets/killers.webp) no-repeat, $alvai-yellow;
   background-size: 31.25em;
@@ -26,12 +35,16 @@
   @media screen and (max-width: $desktop) {
     background-size: 90vw;
   }
+}
   .title {
     font-size: 5vw;
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
     @media screen and (max-width: 700px) {
       font-size: 10vw;
     }
   }
+.subtitle {
+  font-family: "IBM Plex Mono Italic";
 }
 </style>
 <script lang="ts">
