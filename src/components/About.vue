@@ -5,11 +5,16 @@
         <h1 class="title">
           A propos:
         </h1>
-        <p class="subtitle">
-          Développeur full-Stack passionné, curieux et motivé sont les mots qui me représente le mieux. 
-          <br>
-          Après 2 ans d'études dans le développement Web, je suis prêt à rejoindre votre équipe en tant que développeur full-stack afin de mener à bien les différents projets de votre entreprise.
-        </p>
+        <section class="subtitle-container">
+          <p>Salut, Moi c'est Ivan &#x1F596;.</p>
+          <br />
+          <p>Développeur Full Stack &#x1F5A5;.</p>
+          <br />
+          <p>Je suis passionné de programmation &#x1F468;&#x200D;&#x1F4BB;, de <a class="link" href="https://www.youtube.com/watch?v=xHuOtLTQ_1I" target="_blank" rel="noopener noreferrer">films d'horreur</a> &#x1F9DF;&#x1F52A; et de jeux vidéos &#x1F3AE;.</p>
+          <br />
+          <p>Actuellement Étudiant à SUP'Internet &#x1F3EB;.</p>
+
+        </section>
       </div>
     </div>
   </section>
@@ -18,5 +23,27 @@
 <style lang="scss">
 .about {
   background-color: $alvai-snow;
+}
+
+.link, .link:visited {
+  color: $alvai-rose;
+}
+
+.link {
+  display: inline-block;
+  max-width: fit-content;
+  font-weight: bolder;
+  &::after {
+    width: 100%;
+    height: 1px;
+    background: $alvai-dark;
+    content: "";
+    display: block;
+    transform: scale(0);
+    transition:all 0.2s linear 0s;
+  }
+  &:hover::after {
+    transform: scale(1);
+  }
 }
 </style>
