@@ -10,9 +10,9 @@
           <br />
           <p>Développeur Full Stack &#x1F5A5;.</p>
           <br />
-          <p>Je suis passionné de programmation &#x1F468;&#x200D;&#x1F4BB;, de <a class="link" href="https://www.youtube.com/watch?v=xHuOtLTQ_1I" target="_blank" rel="noopener noreferrer">films d'horreur</a> &#x1F9DF;&#x1F52A; et de jeux vidéos &#x1F3AE;.</p>
+          <p>Je suis passionné de <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=K7Hn1rPQouU">programmation</a> &#x1F468;&#x200D;&#x1F4BB;, de <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=xHuOtLTQ_1I">films d'horreur</a> &#x1F9DF;&#x1F52A; et de <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=n12Q2Pj9ESg">jeux vidéo</a> &#x1F3AE;.</p>
           <br />
-          <p>Actuellement Étudiant à SUP'Internet &#x1F3EB;.</p>
+          <p>Je suis actuellement Étudiant à <a class="link" target="_blank" rel="noopener noreferrer" href="https://supinternet.fr">SUP'Internet</a> &#x1F3EB;.</p>
 
         </section>
       </div>
@@ -23,27 +23,5 @@
 <style lang="scss">
 .about {
   background-color: $alvai-snow;
-}
-
-.link, .link:visited {
-  color: $alvai-rose;
-}
-
-.link {
-  display: inline-block;
-  max-width: fit-content;
-  font-weight: bolder;
-  &::after {
-    width: 100%;
-    height: 1px;
-    background: $alvai-dark;
-    content: "";
-    display: block;
-    transform: scale(0);
-    transition:all 0.2s linear 0s;
-  }
-  &:hover::after {
-    transform: scale(1);
-  }
 }
 </style>
