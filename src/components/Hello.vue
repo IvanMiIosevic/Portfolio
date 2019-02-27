@@ -39,6 +39,7 @@
 .hello-title {
 font-size: 5vw;
 animation: 0.5s ease-out 0s 1 slideInFromLeft;
+font-weight: bold;
 @media screen and (max-width: 700px) {
   font-size: 10vw;
 }
