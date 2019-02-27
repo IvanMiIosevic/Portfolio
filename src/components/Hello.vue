@@ -3,6 +3,9 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="hello-title">
+          {{ $t("greeting") }}
+        </h1>
+        <h1 class="hello-title slide-in-top">
           Ivan Milosevic
         </h1>
         <h2 class="subtitle">
@@ -18,7 +21,7 @@
 </template>
 
 <style lang="scss">
-@keyframes slideInFromLeft {
+@keyframes slideInFromTop {
   0% {
     transform: translateY(-1000%);
   }
@@ -36,14 +39,19 @@
     background-size: 90vw;
   }
 }
+
 .hello-title {
-font-size: 5vw;
-animation: 0.5s ease-out 0s 1 slideInFromLeft;
-font-weight: bold;
-@media screen and (max-width: 700px) {
-  font-size: 10vw;
+  font-size: 5vw;
+  font-weight: bold;
+  @media screen and (max-width: 700px) {
+    font-size: 10vw;
+  }
 }
+
+.slide-in-top {
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
 }
+
 .subtitle {
   font-family: "IBM Plex Mono Italic";
 }
