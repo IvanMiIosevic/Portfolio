@@ -2,9 +2,6 @@
   <section class="hero hello is-fullheight is-bold">
     <div class="hero-body">
       <div class="container">
-        <h1 class="hello-title">
-          {{ $t("greeting") }}
-        </h1>
         <h1 class="hello-title slide-in-top">
           Ivan Milosevic
         </h1>
