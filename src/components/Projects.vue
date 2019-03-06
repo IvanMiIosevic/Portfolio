@@ -73,31 +73,31 @@ export default Vue.extend({
           title: "Pokedex",
           description: "Pokédex première génération fait avec JavaScript",
           project_URL: "https://github.com/Alvai/pokedex",
-          image_URL: "https://ouch.alvai.io/pokedex.webp"
+          image_URL: "https://ouch.alvai.dev/pokedex.webp"
         },
         {
           title: "Stunning octo goggles",
           description: "Express API avec GraphQL && Typescript",
           project_URL: "https://github.com/Alvai/stunning-octo-goggles",
-          image_URL: "https://ouch.alvai.io/graphql.webp"
+          image_URL: "https://ouch.alvai.dev/graphql.webp"
         },
         {
           title: "Homepilot (stage)",
           description: "Application d'estimations de loyer en Node/React",
           project_URL: "https://estimation-loyer.homepilot.fr",
-          image_URL: "https://ouch.alvai.io/homepilot_logo.webp"
+          image_URL: "https://ouch.alvai.dev/homepilot_logo.webp"
         },
         {
           title: "too-short",
           description: "raccourcisseur d'url en Node.js",
           project_URL: "https://github.com/Alvai/too-short",
-          image_URL: "https://ouch.alvai.io/url-shortener.webp"
+          image_URL: "https://ouch.alvai.dev/url-shortener.webp"
         },
         {
           title: "deezweb",
           description: "Petit client web pour deezer",
           project_URL: "https://github.com/Alvai/deezweb",
-          image_URL: "https://ouch.alvai.io/deezweb.webp"
+          image_URL: "https://ouch.alvai.dev/deezweb.webp"
         }
       ]
     };
