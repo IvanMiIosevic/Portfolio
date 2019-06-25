@@ -3,19 +3,19 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Projets:
+          {{ $t("titles.projects")}}
         </h1>
         <div class="projects-container">
           <div @click="redirect(project.project_URL)" v-for="(project, index) of projects" :key="index" class="card">
             <!-- TODO: switch to components -->
             <div class="card-image">
               <figure class="image is-4by3">
-                <img :src="project.image_URL" alt="Placeholder image">
+                <img loading="lazy" :src="project.image_URL" alt="Placeholder image">
               </figure>
             </div>
             <div class="card-content has-text-left">
-              <h4 class="has-text-weight-bold is-uppercase">{{ project.title }}</h4>
-              <p>{{ project.description }}</p>
+              <h4 class="has-text-weight-bold is-uppercase">{{ $t(`projects.${project.title}`) }}</h4>
+              <p>{{ $t(`projects.${project.description}`) }}</p>
             </div>
           </div>
           </div>
@@ -70,32 +70,32 @@ export default Vue.extend({
       // TO DO: Move projects to an api
       projects: [
         {
-          title: "Pokedex",
-          description: "Pokédex première génération fait avec JavaScript",
+          title: "pokedex_title",
+          description: "pokedex_description",
           project_URL: "https://github.com/Alvai/pokedex",
           image_URL: "https://ouch.alvai.dev/pokedex.webp"
         },
         {
-          title: "Stunning octo goggles",
-          description: "Express API avec GraphQL && Typescript",
-          project_URL: "https://github.com/Alvai/stunning-octo-goggles",
-          image_URL: "https://ouch.alvai.dev/graphql.webp"
+          title: "golem_ai_title",
+          description: "golem_ai_description",
+          project_URL: "https://golem.ai",
+          image_URL: "https://ouch.alvai.dev/golem.webp"
         },
         {
-          title: "Homepilot (stage)",
-          description: "Application d'estimations de loyer en Node/React",
+          title: "homepilot_title",
+          description: "homepilot_description",
           project_URL: "https://estimation-loyer.homepilot.fr",
           image_URL: "https://ouch.alvai.dev/homepilot_logo.webp"
         },
         {
-          title: "too-short",
-          description: "raccourcisseur d'url en Node.js",
+          title: "too_short_title",
+          description: "too_short_description",
           project_URL: "https://github.com/Alvai/too-short",
           image_URL: "https://ouch.alvai.dev/url-shortener.webp"
         },
         {
-          title: "deezweb",
-          description: "Petit client web pour deezer",
+          title: "deezweb_title",
+          description: "deezweb_description",
           project_URL: "https://github.com/Alvai/deezweb",
           image_URL: "https://ouch.alvai.dev/deezweb.webp"
         }

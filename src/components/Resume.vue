@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" target="_blank" rel="noopener noreferrer" class="resume-button margin-top">Mon CV</a>
+  <a :href="$t('resume_link')" target="_blank" rel="noopener noreferrer" class="resume-button margin-top">{{ $t("resume_button") }}</a>
 </template>
 
 <style lang="scss" scoped>
@@ -25,13 +25,10 @@
 </style>
 
 <script lang="ts">
-import Vue from "vue";
-export default Vue.extend({
-  data() {
-    return {
-      link: "https://ouch.alvai.dev/cv"
-    };
-  },
+import Vue, { VueConstructor } from "vue";
+const vm: VueConstructor = Vue.extend({
   name: "Resume"
 });
+
+export default vm;
 </script>

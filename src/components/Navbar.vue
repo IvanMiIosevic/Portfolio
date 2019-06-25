@@ -11,9 +11,16 @@
         </div>
         <div class="navbar-menu" :class="{ 'is-active': showNav }">
             <div class="navbar-end">
-            <a class="navbar-item" href="#about">A propos</a>
-            <a class="navbar-item" href="#projects">Projets</a>
-            <a class="navbar-item" href="#contact">Contact</a>
+            <a class="navbar-item" href="#about">{{ $t("navbar.about") }}</a>
+            <a class="navbar-item" href="#projects">{{ $t("navbar.projects") }}</a>
+            <a class="navbar-item" href="#contact">{{ $t("navbar.contact") }}</a>
+            <div class="locale-changer navbar-item">
+              <select v-model="$i18n.locale">
+                  <optgroup>
+                    <option class="emojiValue" v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang.name">{{ lang.emoji }}</option>
+                  </optgroup>
+              </select>
+            </div>
             </div>
         </div>
       </div>
@@ -37,6 +44,12 @@ a.logo-item {
 .navbar.is-fixed-top {
   background-color: $alvai-yellow;
 }
+
+select {
+  font-size: 20px;
+  background: $alvai-snow;
+  border-color: $alvai-dark;
+}
 </style>
 
 <script lang="ts">
@@ -44,7 +57,18 @@ import Vue from "vue";
 export default Vue.extend({
   data() {
     return {
-      showNav: false
+      showNav: false,
+      lang: "fr",
+      langs: [
+        {
+          name: "fr",
+          emoji: "🇫🇷"
+        },
+        {
+          name: "en",
+          emoji: "🇬🇧"
+        }
+      ]
     };
   },
   name: "Navbar"

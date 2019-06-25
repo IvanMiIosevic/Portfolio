@@ -3,17 +3,22 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          A propos:
+          {{ $t("titles.about") }}
         </h1>
         <section class="subtitle-container">
-          <p>Salut, Moi c'est Ivan &#x1F596;.</p>
+          <p>{{ $t("greetings")}}</p>
           <br />
-          <p>Développeur Full Stack &#x1F5A5;.</p>
+          <p>{{ $t('job') }}. 🖥</p>
           <br />
-          <p>Je suis passionné de <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=K7Hn1rPQouU">programmation</a> &#x1F468;&#x200D;&#x1F4BB;, de <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=xHuOtLTQ_1I">films d'horreur</a> &#x1F9DF;&#x1F52A; et de <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=n12Q2Pj9ESg">jeux vidéo</a> &#x1F3AE;.</p>
+          <i18n path="hobbies" tag="p">
+            <a place="programming" class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=K7Hn1rPQouU">{{ $t('programming') }}</a>
+            <a place="horror_movies" class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=xHuOtLTQ_1I">{{ $t('horror_movies') }}</a>
+            <a place="video_games" class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=n12Q2Pj9ESg">{{ $t('video_games') }}</a>
+          </i18n>
           <br />
-          <p>Je suis actuellement Étudiant à <a class="link" target="_blank" rel="noopener noreferrer" href="https://supinternet.fr">SUP'Internet</a> &#x1F3EB;.</p>
-
+          <i18n path="studies" tag="p">
+            <a place="school" class="link" target="_blank" rel="noopener noreferrer" href="https://supinternet.fr">{{ $t('school') }}</a>
+          </i18n>
         </section>
       </div>
     </div>

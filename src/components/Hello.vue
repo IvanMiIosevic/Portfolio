@@ -2,6 +2,7 @@
   <section class="hero hello is-fullheight is-bold">
     <div class="hero-body">
       <div class="container">
+        <a class="mlg" href="https://ouch.alvai.dev/mlg">oof</a>
         <h1 class="hello-title slide-in-top">
           Ivan Milosevic
         </h1>
@@ -9,7 +10,7 @@
           aka Alvai
         </h2>
         <h2 class="subtitle">
-          Full-Stack Web developer
+          {{ $t("job") }}
         </h2>
         <Resume />
       </div>
@@ -51,6 +52,16 @@
 
 .subtitle {
   font-family: "IBM Plex Mono Italic";
+}
+
+.mlg {
+  color: $alvai-yellow;
+  position: absolute;
+  left: 5%;
+  top: -75%;
+  &:hover {
+    color: $alvai-dark;
+  }
 }
 </style>
 <script lang="ts">

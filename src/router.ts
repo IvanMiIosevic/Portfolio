@@ -1,26 +1,40 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import { langs } from "@/constants";
+import i18n from "@/plugins/i18n";
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home
+      redirect: "/en"
+    },
+    {
+      path: "/:lang",
+      children: [
+        {
+          path: "/",
+          component: () =>
+            import(/* webpackChunkName: "home" */ "./views/Home.vue")
+        }
+      ]
     }
-    // {
-    //   path: "/about",
-    //   name: "about",
-    //   // route level code-splitting
-    //   // this generates a separate chunk (about.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () =>
-    //     import(/* webpackChunkName: "about" */ "./views/About.vue")
-    // }
   ]
 });
+
+// use beforeEach route guard to set the language
+router.beforeEach((to, from, next) => {
+  // use the language from the routing param or default language
+  let language = to.params.lang;
+  if (!language || !langs.includes(language)) {
+    return next("/en");
+  }
+  i18n.locale = language;
+  next();
+});
+
+export default router;
