@@ -16,9 +16,7 @@
             <a class="navbar-item" href="#contact">{{ $t("navbar.contact") }}</a>
             <div class="locale-changer navbar-item">
               <select v-model="$i18n.locale">
-                  <optgroup>
-                    <option class="emojiValue" v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang.name">{{ lang.emoji }}</option>
-                  </optgroup>
+                    <option class="emojiValue" v-for="(lang, i) in langs" :key="`Lang${i}`"  :selected="$i18n.locale === lang.name ? 'selected' : ''" :value="lang.name">{{ lang.emoji }}</option>
               </select>
             </div>
             </div>
