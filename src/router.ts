@@ -5,13 +5,15 @@ import i18n from "@/plugins/i18n";
 
 Vue.use(Router);
 
+const DEFAULT_LANG = "fr";
+
 const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
-      redirect: "/en"
+      redirect: `/${DEFAULT_LANG}`
     },
     {
       path: "/:lang",
@@ -31,7 +33,7 @@ router.beforeEach((to, from, next) => {
   // use the language from the routing param or default language
   let language = to.params.lang;
   if (!language || !langs.includes(language)) {
-    return next("/en");
+    return next(`/${DEFAULT_LANG}`);
   }
   i18n.locale = language;
   next();

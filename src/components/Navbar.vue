@@ -56,7 +56,6 @@ export default Vue.extend({
   data() {
     return {
       showNav: false,
-      lang: "fr",
       langs: [
         {
           name: "fr",
