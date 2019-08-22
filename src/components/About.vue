@@ -6,18 +6,46 @@
           {{ $t("titles.about") }}
         </h1>
         <section class="subtitle-container">
-          <p>{{ $t("greetings")}}</p>
+          <p>{{ $t("greetings") }}</p>
           <br />
-          <p>{{ $t('job') }}. 🖥</p>
+          <p>{{ $t("job") }}. 🖥</p>
           <br />
           <i18n path="hobbies" tag="p">
-            <a place="programming" class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=K7Hn1rPQouU">{{ $t('programming') }}</a>
-            <a place="horror_movies" class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=xHuOtLTQ_1I">{{ $t('horror_movies') }}</a>
-            <a place="video_games" class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=n12Q2Pj9ESg">{{ $t('video_games') }}</a>
+            <a
+              place="programming"
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.youtube.com/watch?v=K7Hn1rPQouU"
+              >{{ $t("programming") }}</a
+            >
+            <a
+              place="horror_movies"
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.youtube.com/watch?v=xHuOtLTQ_1I"
+              >{{ $t("horror_movies") }}</a
+            >
+            <a
+              place="video_games"
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.youtube.com/watch?v=n12Q2Pj9ESg"
+              >{{ $t("video_games") }}</a
+            >
           </i18n>
           <br />
           <i18n path="studies" tag="p">
-            <a place="school" class="link" target="_blank" rel="noopener noreferrer" href="https://supinternet.fr">{{ $t('school') }}</a>
+            <a
+              place="school"
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://supinternet.fr"
+              >{{ $t("school") }}</a
+            >
           </i18n>
         </section>
       </div>

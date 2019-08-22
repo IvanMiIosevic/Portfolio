@@ -1,11 +1,19 @@
 <template>
-    <footer id="footer" class="footer">
-        <div class="content has-text-centered">
-            <p>Cover Art by <a rel="nofollow" href="https://www.deviantart.com/nrjin" norel><span class="username">NRjin</span></a></p>
-            <p class="love">Made with <font-awesome-icon class="heart-icon" icon="heart" /> By <span class="username">Alvai</span></p>
-            <p>{{ new Date().getFullYear() }}</p>   
-        </div>
-    </footer>
+  <footer id="footer" class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Cover Art by
+        <a rel="nofollow" href="https://www.deviantart.com/nrjin" norel
+          ><span class="username">NRjin</span></a
+        >
+      </p>
+      <p class="love">
+        Made with <font-awesome-icon class="heart-icon" icon="heart" /> By
+        <span class="username">Alvai</span>
+      </p>
+      <p>{{ new Date().getFullYear() }}</p>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>

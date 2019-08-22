@@ -1,28 +1,41 @@
 <template>
-    <nav class="navbar is-fixed-top">
-      <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item logo-item" href="#">Alvai</a>
-            <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
-            <span></span>
-            <span></span>
-            <span></span>
-            </div>
-        </div>
-        <div class="navbar-menu" :class="{ 'is-active': showNav }">
-            <div class="navbar-end">
-            <a class="navbar-item" href="#about">{{ $t("navbar.about") }}</a>
-            <a class="navbar-item" href="#projects">{{ $t("navbar.projects") }}</a>
-            <a class="navbar-item" href="#contact">{{ $t("navbar.contact") }}</a>
-            <div class="locale-changer navbar-item">
-              <select v-model="$i18n.locale">
-                    <option class="emojiValue" v-for="(lang, i) in langs" :key="`Lang${i}`"  :selected="$i18n.locale === lang.name ? 'selected' : ''" :value="lang.name">{{ lang.emoji }}</option>
-              </select>
-            </div>
-            </div>
+  <nav class="navbar is-fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item logo-item" href="#">Alvai</a>
+        <div
+          class="navbar-burger"
+          @click="showNav = !showNav"
+          :class="{ 'is-active': showNav }"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-    </nav>
+      <div class="navbar-menu" :class="{ 'is-active': showNav }">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about">{{ $t("navbar.about") }}</a>
+          <a class="navbar-item" href="#projects">{{
+            $t("navbar.projects")
+          }}</a>
+          <a class="navbar-item" href="#contact">{{ $t("navbar.contact") }}</a>
+          <div class="locale-changer navbar-item">
+            <select v-model="$i18n.locale">
+              <option
+                class="emojiValue"
+                v-for="(lang, i) in langs"
+                :key="`Lang${i}`"
+                :selected="$i18n.locale === lang.name ? 'selected' : ''"
+                :value="lang.name"
+                >{{ lang.emoji }}</option
+              >
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <style lang="scss">

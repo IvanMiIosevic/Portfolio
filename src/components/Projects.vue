@@ -3,24 +3,35 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          {{ $t("titles.projects")}}
+          {{ $t("titles.projects") }}
         </h1>
         <div class="projects-container">
-          <div @click="redirect(project.project_URL)" v-for="(project, index) of projects" :key="index" class="card">
+          <div
+            @click="redirect(project.project_URL)"
+            v-for="(project, index) of projects"
+            :key="index"
+            class="card"
+          >
             <!-- TODO: switch to components -->
             <div class="card-image">
               <figure class="image is-4by3">
-                <img loading="lazy" :src="project.image_URL" alt="Placeholder image">
+                <img
+                  loading="lazy"
+                  :src="project.image_URL"
+                  alt="Placeholder image"
+                />
               </figure>
             </div>
             <div class="card-content has-text-left">
-              <h4 class="has-text-weight-bold is-uppercase">{{ $t(`projects.${project.title}`) }}</h4>
+              <h4 class="has-text-weight-bold is-uppercase">
+                {{ $t(`projects.${project.title}`) }}
+              </h4>
               <p>{{ $t(`projects.${project.description}`) }}</p>
             </div>
           </div>
-          </div>
         </div>
-        <Resume />
+      </div>
+      <Resume />
     </div>
   </section>
 </template>
