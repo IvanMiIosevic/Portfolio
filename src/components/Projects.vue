@@ -73,6 +73,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { ASSETS_BASE_URL } from "../constants";
 const Resume = () =>
   import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
 export default Vue.extend({
@@ -84,31 +85,31 @@ export default Vue.extend({
           title: "pokedex_title",
           description: "pokedex_description",
           project_URL: "https://github.com/Alvai/pokedex",
-          image_URL: "https://ouch.alvai.dev/pokedex.webp"
+          image_URL: `${ASSETS_BASE_URL}/pokedex.webp`
         },
         {
           title: "golem_ai_title",
           description: "golem_ai_description",
           project_URL: "https://golem.ai",
-          image_URL: "https://ouch.alvai.dev/golem.webp"
+          image_URL: `${ASSETS_BASE_URL}/golem.webp`
         },
         {
           title: "homepilot_title",
           description: "homepilot_description",
           project_URL: "https://estimation-loyer.homepilot.fr",
-          image_URL: "https://ouch.alvai.dev/homepilot_logo.webp"
+          image_URL: `${ASSETS_BASE_URL}/homepilot_logo.webp`
         },
         {
           title: "too_short_title",
           description: "too_short_description",
           project_URL: "https://github.com/Alvai/too-short",
-          image_URL: "https://ouch.alvai.dev/url-shortener.webp"
+          image_URL: `${ASSETS_BASE_URL}/url-shortener.webp`
         },
         {
           title: "deezweb_title",
           description: "deezweb_description",
           project_URL: "https://github.com/Alvai/deezweb",
-          image_URL: "https://ouch.alvai.dev/deezweb.webp"
+          image_URL: `${ASSETS_BASE_URL}/deezweb.webp`
         }
       ]
     };

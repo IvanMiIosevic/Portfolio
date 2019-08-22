@@ -2,7 +2,7 @@
   <section class="hero hello is-fullheight is-bold">
     <div class="hero-body">
       <div class="container">
-        <a class="mlg" href="https://ouch.alvai.dev/mlg">oof</a>
+        <a class="mlg" :href="`${ASSETS_BASE_URL}/mlg`">oof</a>
         <h1 class="hello-title slide-in-top">
           Ivan Milosevic
         </h1>
@@ -17,6 +17,24 @@
     </div>
   </section>
 </template>
+
+<script lang="ts">
+import { ASSETS_BASE_URL } from "../constants";
+import Vue from "vue";
+const Resume = () =>
+  import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
+export default Vue.extend({
+  name: "Hello",
+  components: {
+    Resume
+  },
+  data: function() {
+    return {
+      ASSETS_BASE_URL
+    };
+  }
+});
+</script>
 
 <style lang="scss">
 @keyframes slideInFromTop {
@@ -64,14 +82,3 @@
   }
 }
 </style>
-<script lang="ts">
-import Vue from "vue";
-const Resume = () =>
-  import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
-export default Vue.extend({
-  name: "Hello",
-  components: {
-    Resume
-  }
-});
-</script>
