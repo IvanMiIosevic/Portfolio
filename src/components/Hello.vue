@@ -2,7 +2,7 @@
   <section class="hero hello is-fullheight is-bold">
     <div class="hero-body">
       <div class="container">
-        <a class="mlg" :href="`${ASSETS_BASE_URL}/mlg`">oof</a>
+        <a class="mlg" :href="`${ASSETS_BASE_URL}/mlg.html`">oof</a>
         <h1 class="hello-title slide-in-top">
           Ivan Milosevic
         </h1>
