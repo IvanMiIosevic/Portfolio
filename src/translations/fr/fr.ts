@@ -7,7 +7,7 @@ export default {
   titles,
   navbar,
   projects,
-  job: "Développeur React.js / Vue.js / Node.js",
+  job: "Développeur Javascript / React.js / Vue.js & Node.js",
   programming: "programmation",
   horrorMovies: "films d'horreur",
   videoGames: "jeux vidéos",
