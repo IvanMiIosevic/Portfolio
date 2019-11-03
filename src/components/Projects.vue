@@ -2,33 +2,9 @@
   <section id="projects" class="hero is-medium projects is-bold">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
-          {{ $t("titles.projects") }}
-        </h1>
+        <h1 class="title">{{ $t("titles.projects") }}</h1>
         <div class="projects-container">
-          <div
-            @click="redirect(project.project_URL)"
-            v-for="(project, index) of projects"
-            :key="index"
-            class="card"
-          >
-            <!-- TODO: switch to components -->
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img
-                  loading="lazy"
-                  :src="project.image_URL"
-                  alt="Placeholder image"
-                />
-              </figure>
-            </div>
-            <div class="card-content has-text-left">
-              <h4 class="has-text-weight-bold is-uppercase">
-                {{ $t(`projects.${project.title}`) }}
-              </h4>
-              <p>{{ $t(`projects.${project.description}`) }}</p>
-            </div>
-          </div>
+          <Card v-for="(project, index) in projects" :key="index" :project="project" />
         </div>
       </div>
       <Resume />
@@ -36,14 +12,82 @@
   </section>
 </template>
 
+<script lang="ts">
+import Vue from "vue";
+import { ASSETS_BASE_URL } from "../constants";
+
+const Resume = (): Promise<typeof import("@/components/Resume.vue")> =>
+  import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
+const Card = (): Promise<typeof import("@/components/Card.vue")> =>
+  import(/* webpackChunkName: "Card" */ "@/components/Card.vue");
+export default Vue.extend({
+  components: {
+    Resume,
+    Card
+  },
+  data() {
+    return {
+      // TO DO: Move projects to an api
+      projects: [
+        {
+          title: "pokedexTitle",
+          description: "pokedexDescription",
+          github: "https://github.com/Alvai/pokedex",
+          image: `${ASSETS_BASE_URL}/pokedex-square.webp`,
+          stack: ["Javascript", "HTML", "CSS"],
+          missions: "pokedexMissions"
+        },
+        {
+          title: "golemAiTitle",
+          description: "golemAiDescription",
+          website: "https://golem.ai",
+          image: `${ASSETS_BASE_URL}/golem-square.webp`,
+          stack: ["PHP", "Symfony"],
+          missions: "golemAiMissions"
+        },
+        {
+          title: "homepilotTitle",
+          description: "homepilotDescription",
+          website: "https://estimation-loyer.homepilot.fr",
+          image: `${ASSETS_BASE_URL}/homepilot-square.webp`,
+          stack: ["react", "node"],
+          missions: "homepilotMissions"
+        },
+        {
+          title: "tooShortTitle",
+          description: "tooShortDescription",
+          github: "https://github.com/Alvai/too-short",
+          image: `${ASSETS_BASE_URL}/short-square.webp`,
+          stack: ["node"],
+          missions: "tooShortMissions"
+        },
+        {
+          title: "deezwebTitle",
+          description: "deezwebDescription",
+          github: "https://github.com/Alvai/deezweb",
+          image: `${ASSETS_BASE_URL}/deezweb-square.webp`,
+          stack: ["Vue.js"],
+          missions: "deezwebMissions"
+        }
+      ]
+    };
+  },
+  methods: {
+    redirect(url: string): void {
+      window.location.href = url;
+    }
+  }
+});
+</script>
+
 <style lang="scss">
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  @media screen and (min-width: 1087px) {
+  @media screen and (min-width: 1300px) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  grid-gap: 5rem;
+  grid-gap: 2rem;
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -58,69 +102,4 @@
     }
   }
 }
-.projects .card-image img {
-  object-fit: cover;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
-.card-footer {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  padding: 15px;
-  overflow: hidden;
-}
 </style>
-
-<script lang="ts">
-import Vue from "vue";
-import { ASSETS_BASE_URL } from "../constants";
-const Resume = () =>
-  import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
-export default Vue.extend({
-  data() {
-    return {
-      // TO DO: Move projects to an api
-      projects: [
-        {
-          title: "pokedex_title",
-          description: "pokedex_description",
-          project_URL: "https://github.com/Alvai/pokedex",
-          image_URL: `${ASSETS_BASE_URL}/pokedex.webp`
-        },
-        {
-          title: "golem_ai_title",
-          description: "golem_ai_description",
-          project_URL: "https://golem.ai",
-          image_URL: `${ASSETS_BASE_URL}/golem.webp`
-        },
-        {
-          title: "homepilot_title",
-          description: "homepilot_description",
-          project_URL: "https://estimation-loyer.homepilot.fr",
-          image_URL: `${ASSETS_BASE_URL}/homepilot_logo.webp`
-        },
-        {
-          title: "too_short_title",
-          description: "too_short_description",
-          project_URL: "https://github.com/Alvai/too-short",
-          image_URL: `${ASSETS_BASE_URL}/url-shortener.webp`
-        },
-        {
-          title: "deezweb_title",
-          description: "deezweb_description",
-          project_URL: "https://github.com/Alvai/deezweb",
-          image_URL: `${ASSETS_BASE_URL}/deezweb.webp`
-        }
-      ]
-    };
-  },
-  methods: {
-    redirect: function(url: string): void {
-      window.location.href = url;
-    }
-  },
-  components: {
-    Resume
-  }
-});
-</script>
