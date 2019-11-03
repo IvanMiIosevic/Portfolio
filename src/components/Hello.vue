@@ -3,15 +3,9 @@
     <div class="hero-body">
       <div class="container">
         <a class="mlg" :href="`${ASSETS_BASE_URL}/mlg.html`">oof</a>
-        <h1 class="hello-title slide-in-top">
-          Ivan Milosevic
-        </h1>
-        <h2 class="subtitle">
-          aka Alvai
-        </h2>
-        <h2 class="subtitle">
-          {{ $t("job") }}
-        </h2>
+        <h1 class="hello-title slide-in-top">Ivan Milosevic</h1>
+        <h2 class="subtitle">aka Alvai</h2>
+        <h2 class="subtitle">{{ $t("job") }}</h2>
         <Resume />
       </div>
     </div>
@@ -21,7 +15,7 @@
 <script lang="ts">
 import { ASSETS_BASE_URL } from "../constants";
 import Vue from "vue";
-const Resume = () =>
+const Resume = (): Promise<typeof import("@/components/Resume.vue")> =>
   import(/* webpackChunkName: "Resume" */ "@/components/Resume.vue");
 export default Vue.extend({
   name: "Hello",

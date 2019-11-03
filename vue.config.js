@@ -1,4 +1,3 @@
-const CompressionWebpackPlugin = require("compression-webpack-plugin");
 const productionGzipExtensions = ["js", "css"];
 
 module.exports = {
@@ -15,7 +14,7 @@ module.exports = {
   },
   configureWebpack: {
     plugins: [
-      new CompressionWebpackPlugin({
+      new (require("compression-webpack-plugin"))({
         filename: "[path].gz[query]",
         algorithm: "gzip",
         test: new RegExp("\\.(" + productionGzipExtensions.join("|") + ")$"),

@@ -27,18 +27,19 @@ body {
 <script lang="ts">
 import Vue from "vue";
 import "bulma/css/bulma.css";
-const Home = () => import(/* webpackChunkName: "home" */ "@/views/Home.vue");
-const Navbar = () =>
+const Home = (): Promise<typeof import("@/views/Home.vue")> =>
+  import(/* webpackChunkName: "home" */ "@/views/Home.vue");
+const Navbar = (): Promise<typeof import("@/components/Navbar.vue")> =>
   import(/* webpackChunkName: "navbar" */ "@/components/Navbar.vue");
 export default Vue.extend({
+  components: {
+    Home,
+    Navbar
+  },
   data() {
     return {
       showNav: false
     };
-  },
-  components: {
-    Home,
-    Navbar
   }
 });
 </script>

@@ -1,11 +1,10 @@
 <template>
   <a
-    :href="$t('resume_link')"
+    :href="$t('resumeLink')"
     target="_blank"
     rel="noopener noreferrer"
     class="resume-button margin-top"
-    >{{ $t("resume_button") }}</a
-  >
+  >{{ $t("resumeButton") }}</a>
 </template>
 
 <style lang="scss" scoped>

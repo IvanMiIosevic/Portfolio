@@ -9,13 +9,13 @@ export default {
   projects,
   job: "React.js / Vue.js / Node.js Developer",
   programming: "programming",
-  horror_movies: "horror movies",
-  video_games: "video games",
+  horrorMovies: "horror movies",
+  videoGames: "video games",
   school: "SUP'Internet",
   greetings: "Hi, I'm Ivan 🖖🏻.",
   hobbies:
     "I love {programming} 👨🏻‍💻, {horror_movies} 🧟🔪 and {video_games} 🎮.",
   studies: "I'm currently a student at {school} 🏫",
-  resume_button: "my resume",
-  resume_link: `${ASSETS_BASE_URL}/resume.pdf`
+  resumeButton: "my resume",
+  resumeLink: `${ASSETS_BASE_URL}/resume.pdf`
 };

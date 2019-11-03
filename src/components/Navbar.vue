@@ -5,8 +5,8 @@
         <a class="navbar-item logo-item" href="#">Alvai</a>
         <div
           class="navbar-burger"
-          @click="showNav = !showNav"
           :class="{ 'is-active': showNav }"
+          @click="showNav = !showNav"
         >
           <span></span>
           <span></span>
@@ -23,9 +23,9 @@
           <div class="locale-changer navbar-item">
             <select v-model="$i18n.locale">
               <option
-                class="emojiValue"
                 v-for="(lang, i) in langs"
                 :key="`Lang${i}`"
+                class="emojiValue"
                 :selected="$i18n.locale === lang.name ? 'selected' : ''"
                 :value="lang.name"
                 >{{ lang.emoji }}</option
@@ -66,6 +66,7 @@ select {
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
+  name: "Navbar",
   data() {
     return {
       showNav: false,
@@ -80,7 +81,6 @@ export default Vue.extend({
         }
       ]
     };
-  },
-  name: "Navbar"
+  }
 });
 </script>

@@ -20,7 +20,7 @@ const router = new Router({
       children: [
         {
           path: "/",
-          component: () =>
+          component: (): Promise<typeof import("./views/Home.vue")> =>
             import(/* webpackChunkName: "home" */ "./views/Home.vue")
         }
       ]
@@ -31,7 +31,7 @@ const router = new Router({
 // use beforeEach route guard to set the language
 router.beforeEach((to, from, next) => {
   // use the language from the routing param or default language
-  let language = to.params.lang;
+  const language = to.params.lang;
   if (!language || !langs.includes(language)) {
     return next(`/${DEFAULT_LANG}`);
   }
