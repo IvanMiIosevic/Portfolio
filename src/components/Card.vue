@@ -154,9 +154,9 @@ export default Vue.extend({
   background: #8cc03d;
 }
 
-.php {
+.icon span.php {
   color: white;
-  background: #767bb3;
+  background: #4b5dc1;
 }
 
 .icon span.vue-js {
