@@ -17,5 +17,5 @@ export default {
     "I love {programming} 👨🏻‍💻, {horror_movies} 🧟🔪 and {video_games} 🎮.",
   studies: "I'm currently a student at {school} 🏫",
   resumeButton: "my resume",
-  resumeLink: `${ASSETS_BASE_URL}/resume.pdf`
+  resumeLink: `${ASSETS_BASE_URL}/cv.pdf`
 };
