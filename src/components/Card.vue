@@ -92,15 +92,12 @@ export default Vue.extend({
       if (!cardReveal) return;
 
       if (!cardReveal.classList.contains("flip-card-visible")) {
-        console.log("it doesn't have the visible class");
-
         cardReveal.classList.add("flip-card-visible");
         cardReveal.classList.remove("flip-card-visible-move-out");
         setTimeout(() => {
           cardReveal.classList.add("flip-card-visible-move-in");
         }, 100);
       } else {
-        console.log("it does have the visible class");
         cardReveal.classList.remove("flip-card-visible-move-in");
         cardReveal.classList.add("flip-card-visible-move-out");
         setTimeout(() => {
