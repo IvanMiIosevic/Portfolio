@@ -139,16 +139,25 @@ export default Vue.extend({
   }
 }
 
-.react {
+.icon span.react-js {
   background: #60dafb;
 }
 
-.javascript {
+.icon span.javascript {
   background: #f1d91e;
 }
 
-.node {
+.icon span.node-js {
   background: #8cc03d;
+}
+
+.icon span.crossfilter {
+  background: #000000;
+  color: white;
+}
+
+.icon span.d3 {
+  background: #F29940;
 }
 
 .icon span.php {

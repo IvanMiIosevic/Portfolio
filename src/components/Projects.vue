@@ -50,7 +50,7 @@ export default Vue.extend({
           description: "homepilotDescription",
           website: "https://estimation-loyer.homepilot.fr",
           image: `${ASSETS_BASE_URL}/homepilot-square.webp`,
-          stack: ["react", "node"],
+          stack: ["React.js", "Node.js"],
           missions: "homepilotMissions"
         },
         {
@@ -58,7 +58,7 @@ export default Vue.extend({
           description: "tooShortDescription",
           github: "https://github.com/Alvai/too-short",
           image: `${ASSETS_BASE_URL}/short-square.webp`,
-          stack: ["node"],
+          stack: ["Node.js"],
           missions: "tooShortMissions"
         },
         {
@@ -68,6 +68,14 @@ export default Vue.extend({
           image: `${ASSETS_BASE_URL}/deezweb-square.webp`,
           stack: ["Vue.js"],
           missions: "deezwebMissions"
+        },
+        {
+          title: "citioTitle",
+          description: "citioDescription",
+          website: "https://cit.io",
+          image: `${ASSETS_BASE_URL}/citio-square.webp`,
+          stack: ["D3", "React.js", "Crossfilter"],
+          missions: "citioMissions"
         }
       ]
     };

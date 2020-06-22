@@ -27,5 +27,10 @@ export default {
   tooShortDescription:
     "Too-short permet de raccourcir vos URLS les plus longues en de petites URLs avec votre propre nom de domaine.",
   tooShortMissions:
-    "Structuration de la base de données et mise en place du serveur qui fait le lien entre le client et la base de données."
+    "Structuration de la base de données et mise en place du serveur qui fait le lien entre le client et la base de données.",
+  citioTitle: 'CITiO',
+  citioDescription:
+    "CITIO est une startup qui met le Big Data et l’Intelligence Artificielle au service des transports publics.",
+    citioMissions:
+    "Développement de nouveaux modules et de nouveaux graphs pour l'application.",
 };
