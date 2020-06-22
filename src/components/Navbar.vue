@@ -21,16 +21,7 @@
           }}</a>
           <a class="navbar-item" href="#contact">{{ $t("navbar.contact") }}</a>
           <div class="locale-changer navbar-item">
-            <select v-model="$i18n.locale">
-              <option
-                v-for="(lang, i) in langs"
-                :key="`Lang${i}`"
-                class="emojiValue"
-                :selected="$i18n.locale === lang.name ? 'selected' : ''"
-                :value="lang.name"
-                >{{ lang.emoji }}</option
-              >
-            </select>
+            <v-select v-model="$i18n.locale" class="style-chooser" :clearable="false" :options="langs" :reduce="lang => lang.name"></v-select>
           </div>
         </div>
       </div>
@@ -56,15 +47,42 @@ a.logo-item {
   background-color: $alvai-yellow;
 }
 
-select {
-  font-size: 20px;
-  background: $alvai-snow;
-  border-color: $alvai-dark;
-}
+  .style-chooser .vs__search::placeholder,
+  .style-chooser .vs__dropdown-toggle,
+  .style-chooser .vs__dropdown-menu {
+    font-size: 1em;
+    background: $alvai-snow;
+    border-color: $alvai-dark;
+    color: $alvai-yellow;
+  }
+
+  .style-chooser, .style-chooser .vs__dropdown-menu {
+    max-width: 72px;
+    min-width: 72px;
+  }
+
+  .locale-changer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .style-chooser .vs__selected-options {
+    padding: 0;
+  }
+
+  .style-chooser .vs__clear,
+  .style-chooser .vs__open-indicator {
+    fill: $alvai-dark;
+  }
 </style>
 
 <script lang="ts">
 import Vue from "vue";
+import vSelect from 'vue-select';
+import 'vue-select/dist/vue-select.css';
+
+Vue.component('v-select', vSelect)
+
 export default Vue.extend({
   name: "Navbar",
   data() {
@@ -73,11 +91,11 @@ export default Vue.extend({
       langs: [
         {
           name: "fr",
-          emoji: "🇫🇷"
+          label: "🇫🇷"
         },
         {
           name: "en",
-          emoji: "🇬🇧"
+          label: "🇬🇧"
         }
       ]
     };
