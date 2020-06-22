@@ -57,8 +57,8 @@ a.logo-item {
   }
 
   .style-chooser, .style-chooser .vs__dropdown-menu {
-    max-width: 72px;
-    min-width: 72px;
+    max-width: 75px;
+    min-width: 75px;
   }
 
   .locale-changer {
